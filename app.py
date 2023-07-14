@@ -4,6 +4,7 @@ from flask import Flask, jsonify
 primary_url = 'https://www.getmyuni.com/btech-colleges'
 
 app = Flask(__name__)
+app.debug = True
 
 @app.route('/university_info', methods=['GET'])
 def scrape_colleges():
